@@ -1,6 +1,6 @@
 [options]
 ; Copiar como config/odoo-eam.conf y completar los valores locales.
-addons_path = /home/cguerrero/odoo-multiclient/odoo/addons,/home/cguerrero/odoo-multiclient/src/addons_l10n_ar
+addons_path = /home/cguerrero/odoo-multiclient/odoo/addons,/home/cguerrero/odoo-multiclient/src/addons_l10n_ar,/home/cguerrero/odoo-multiclient/src/eam
 admin_passwd = CHANGE_ME
 
 db_host = localhost
