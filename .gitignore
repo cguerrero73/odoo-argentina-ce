@@ -7,6 +7,10 @@
 /data/
 /_temp/
 
+# Archivos generados por Python.
+**/__pycache__/
+*.py[cod]
+
 # Configuración local sensible.
 config/*.conf
 *.local.conf
