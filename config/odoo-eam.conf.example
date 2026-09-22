@@ -1,0 +1,22 @@
+[options]
+; Copiar como config/odoo-eam.conf y completar los valores locales.
+addons_path = /home/cguerrero/odoo-multiclient/odoo/addons,/home/cguerrero/odoo-multiclient/src/addons_l10n_ar
+admin_passwd = CHANGE_ME
+
+db_host = localhost
+db_port = 5432
+db_user = CHANGE_ME
+db_password = CHANGE_ME
+db_name = odoo_eam
+dbfilter = ^odoo_eam$
+list_db = False
+
+http_port = 8069
+http_interface = 0.0.0.0
+data_dir = /home/cguerrero/odoo-multiclient/data
+
+log_db = True
+log_db_level = warning
+log_handler = :INFO
+log_level = info
+workers = 0

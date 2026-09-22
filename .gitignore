@@ -1,0 +1,12 @@
+# Repositorios y código fuente administrados por separado.
+/odoo/
+/src_back/
+
+# Entorno Python y datos generados en ejecución.
+/venv/
+/data/
+/_temp/
+
+# Configuración local sensible.
+config/*.conf
+*.local.conf

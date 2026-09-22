@@ -1,0 +1,61 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+       {
+            "name": "Odoo DEV",
+           "type": "debugpy",
+           "request": "launch",
+           "program": "${workspaceFolder}/odoo/odoo-bin",
+           "args": [
+                "-c", "${workspaceFolder}/config/odoo.conf",
+                "--limit-time-real", "99999",
+                "-d","odoo19_demo",
+            //    "-u","l10n_pe_reports_stock_extend",
+            //    "--dev","all"
+           ],
+           "env": {
+               "PYTHONPATH": "${workspaceFolder}/odoo/odoo/addons,${workspaceFolder}/odoo/addons,${workspaceFolder}/enterprise",
+               "OE_INTERNATIONAL": "False",
+               "LANG": "es_AR.UTF-8",
+               "LC_ALL": "es_AR.UTF-8",
+               "TZ": "America/Buenos Aires",
+                "ODOO_RC": "${workspaceFolder}/config/odoo.conf"
+           },
+           "stopOnEntry": false,
+           "cwd": "${workspaceFolder}",
+           "showReturnValue": true,
+           "console": "integratedTerminal",
+           "justMyCode": true,
+           "pythonArgs": [
+               "-Xfrozen_modules=off"
+           ]
+        },
+        {
+            "name": "Odoo EAM",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/odoo/odoo-bin",
+            "args": [
+                "-c", "${workspaceFolder}/config/odoo-eam.conf",
+                "--limit-time-real", "99999",
+                "-d", "odoo_eam"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/odoo/odoo/addons,${workspaceFolder}/odoo/addons,${workspaceFolder}/enterprise",
+                "OE_INTERNATIONAL": "False",
+                "LANG": "es_AR.UTF-8",
+                "LC_ALL": "es_AR.UTF-8",
+                "TZ": "America/Buenos Aires",
+                "ODOO_RC": "${workspaceFolder}/config/odoo-eam.conf"
+            },
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "showReturnValue": true,
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "pythonArgs": [
+                "-Xfrozen_modules=off"
+            ]
+        }
+   ]
+}
